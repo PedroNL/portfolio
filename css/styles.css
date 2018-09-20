@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* utility */
+.center {
+  text-align: center;
+}
+
+/* ---------- */
+
+.container {
+  background: #fafafa;
+  max-width: 968px;
+  margin: auto;
+  min-height: calc(100vh - 60px);
+}
+
+.heading {
+  margin: 0;
+  background: #6200EE;
+  color: #f4f4f4;
+  padding: 1rem;
+}
+
+.about-container {
+  padding: 50px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 
+  'aboutimage desc desc'
+  'work education hobbies';
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about-foto {
+  grid-area: aboutimage;
+  margin: auto;
+  border-radius: 50%;
+  max-width: 180px;
+  max-height: 180px;
+  border: 2px solid #03DAC5;
+}
+
+.about-item {
+  background: #6200EE;
+  padding: 0.5rem;
+  border-bottom: #03DAC5 4px solid;
+  color: #fff;
+  border-radius: 10px;
+  line-height: 1.7;
+}
+
+.about-title {
+  color: #03DAC5;
+} 
+
+.about-description {
+  grid-area: desc;
+}
+
+.about-description p {
+  color: #6200EE;
+}
+
+#work {
+  grid-area: work;
+}
+
+#education {
+  grid-area: education;
+}
+
+#hobbies {
+  grid-area: hobbies;
+}
+
+
+/* Portfolio */
+
+#portfolio {
+  background: #6200EE;
+
+}
+
+#portfolio h1 {
+  padding: 2rem;
+  color: #f4f4f4;
+  margin: 0;
+}
+
+.projects-container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px 50px;
+}
+
+.project-item {
+  background: #f4f4f4;
+
+}
+
+.project-item img {
+  width: 100%;
+}
+
+.project-item a {
+  text-decoration: none;
+}
+
+
+/* Contact */
+
+.contact-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 50px;
+  line-height: 1.7;
+}
+.contact-container h4, p {
+  margin: 0;
+}
+
+.contact-item {
+  color: #6200EE;   
+  font-size: 1rem;
+}
+
+.contact-info {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contact-item input, textarea {
+  width: 100%;
+} 
+
+.contact-item input[type="submit"] {
+  text-align: center;
+  width: 100%;
+  background: #6200EE;
+  color: #f4f4f4;
+}
+
+
+footer {
+  box-sizing: border-box;
+  text-align: center;
+  padding: .8rem;
+  background: #6200EE;
+  color: #f4f4f4;
+  height: 60px;
+  max-width: 968px;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    grid-template-areas: 
+    'aboutimage'
+    'desc'
+    'work'
+    'education' 
+    'hobbies';
+    grid-template-columns: 1fr;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+

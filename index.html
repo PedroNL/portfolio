@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+    crossorigin=""></script>
+  <title>Portfolio</title>
+</head>
+
+<body>
+
+  <!-- ABOUT SECTION -->
+  <div class="container">
+
+    <section id="about">
+      <h1 class="heading">
+        Pedro <span>Hernández</span>
+      </h1>
+      <div class="about-container">
+        <img src="img/pedro.jpg" alt="Pedro Hernandez" class="about-foto">
+        <div class="about-description">
+          <h3>ABOUT</h3>
+          <p>Hi Mobsters, My name is Pedro and I have been living for the last 2 years in The Netherlands. I'm from Isla de Margarita - Venezuela, back there I did studies in Informatics and also tried to learn to surf. The last 2 years have been a period of adaptation but I'm finally starting to feel this place as home, I ride my bike everywhere, talk about the weather with my Dutch neighbours and love a tosti for lunch. I'm joining Mobiquity as an IT trainee and hopefully later on contributing as a front-end developer. I love playing sports, mostly volleyball and football, if you ever looking for players, reach me up, I will be glad to join :)</p>
+        </div>
+        <div class="about-item" id="work">
+          <h3 class="about-title">Last Company:</h3>
+          <h5>Metrica Sports</h5>
+          <p>Data Aquisition:</p>
+          <p>Managing a semi-automated event tracking software</p>
+        </div>
+        <div class="about-item" id="education">
+          <h3 class="about-title">Courses:</h3>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JAVASCRIPT</p>
+          <p>NODEJS</p>
+        </div>
+        <div class="about-item" id="hobbies">
+          <h3 class="about-title">Hobbies:</h3>
+          <p>Football</p>
+          <p>Voleyball</p>
+          <p>Cycling</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio">
+      <h1 class="center">Portfolio</h1>
+      <div class="projects-container">
+        <div class="project-item">
+          <a href="https://pedronl.github.io/hangman/" target="_blank">
+            <img src="./img/hangman.png" alt="">
+          </a>
+        </div>
+        <div class="project-item">
+          <a href="#">
+            <img src="./img/project1.jpeg" alt="">
+          </a>
+        </div>
+        <div class="project-item">
+          <a href="#">
+            <img src="./img/project2.jpeg" alt="">
+          </a>
+        </div>
+        <div class="project-item">
+          <a href="#">
+            <img src="./img/project3.jpg" alt="">
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <h1 class="center">Contact</h1>
+      <div class="contact-container">
+        <div class="contact-item">
+          <h4>Tell me something:</h4>
+          <form action="#">
+            <input type="text" placeholder="Your Email:">
+            <textarea name="comment" id="" cols="30" rows="10" placeholder="Your Comment:"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <div class="contact-item contact-info">
+          <div class="">
+            <h4>Email:</h4>
+            <p>phernandez@mobiquityinc.com</p>
+          </div>
+          <div>
+            <h4>Phone:</h4>
+            <p>+31 0649348977</p>
+          </div>
+        </div>
+
+        <!-- <div class="contact-item">
+          <div id="mapDiv" style="width: 300px; height: 250px"></div>
+        </div> -->
+      </div>
+    </section>
+
+
+  </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2018 MobiquityInc by Pedro Hernandez</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
